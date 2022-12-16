@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/popUpPage.js"></script>
+    <title>Coffee Work</title>
+</head>
+<body>
+    <nav class="navbar"> 
+        <img src="../static/Logo1.png" class="miniLogo">
+        <ul>
+            <il><a href="./homePage.html">Home Page</a></il>
+            <il><a href="./contactUs.html">Contact Us</a></il>
+            <il><a href="./aboutUs.html">About Us</a></il>
+        </ul>
+    </nav>
+    <header class = "header">
+        <h1> :תוכל לסנן לפי הקריטריונים הבאים</h1>
+        <div class="checkBox">
+            <label class="CBcontainer">כשר
+                <input type="checkbox">
+                <span class="checkmark"></span></label>&nbsp;&nbsp;&nbsp;
+            <label class="CBcontainer">פתוח עכשיו
+                <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                <span class="checkmark"></span></label>
+            <label class="CBcontainer">טבעוני
+                <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                <span class="checkmark"></span></label>
+            <label class="CBcontainer">מקומות פנויים
+                <input type="checkbox">
+                <span class="checkmark"></span></label>
+        </div>
+    </header>
+    <div class = "shops-container">
+        <div class = "shop">
+            <h1>Mela</h1>
+            <p>210m</p>
+            <button class = "open-modal-btn-shop" onclick="onToggleModal(event)">פרטים נוספים</button>
+        </div>
+        <div class = "shop">
+            <h1>ארקפה</h1>
+            <p>180m</p>
+            <button class = "open-modal-btn-shop" onclick="onToggleModal(event)">פרטים נוספים</button>
+        </div>
+        <div class = "shop">
+            <h1>חמנייה</h1>
+            <p>120m</p>
+            <button class = "open-modal-btn-shop" onclick="onToggleModal(event)">פרטים נוספים</button>
+        </div>
+        <div class = "shop">
+            <h1>קפה נועם</h1>
+            <p>490m</p>
+            <button class = "open-modal-btn-shop" onclick="onToggleModal(event)">פרטים נוספים</button>
+        </div>
+        <div class = "shop">
+            <h1>קפה אלקלעי</h1>
+            <p>300m</p>
+            <button class = "open-modal-btn-shop" onclick="onToggleModal(event)">פרטים נוספים</button>
+        </div>
+        <div class = "shop">
+            <h1>ליאתי</h1>
+            <p>290m</p>
+            <button class = "open-modal-btn-shop" onclick="onToggleModal(event)">פרטים נוספים</button>
+        </div>
+    </div>
+    <div class = "screen-overly"></div>
+    <div class = "modal">
+        <button class = "close-modal-btn" onclick="onToggleModal(event)">X</button>
+        <h1>חמנייה</h1>
+        <h2>פתוח עכשיו</h2><br><br>
+        <h2>דירוג 4.5/5</h2>
+        <ul class="shop-detail">
+            <li class="yes">שקעים במקום</li>
+            <li class="no">מקום שקט</li>
+            <li class="no">ויפי חזק</li>
+            <li class="no">כשר</li>
+            <li class="yes">טבעוני</li>
+            <li class="yes">$$$</li>
+        </ul>
+        <h2>שני מקומות פנויים</h2>
+        <button class = "order-btn" onclick="location.href='./reservation.html'">הזמן מקום</button>
+    </div>
+</body>
+</html>

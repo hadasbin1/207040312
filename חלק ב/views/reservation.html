@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/popUpPage.js"></script>
+    <title>Coffee Work</title>
+</head>
+<body>
+    <nav class="navbar"> 
+        <img src="../static/Logo1.png" class="miniLogo">
+        <ul>
+            <il><a href="./homePage.html">Home Page</a></il>
+            <il><a href="./contactUs.html">Contact Us</a></il>
+            <il><a href="./aboutUs.html">About Us</a></il>
+        </ul>
+    </nav>
+    <div class="res-box">
+        <h1>איזה כיף שבחרת להזמין מקום בחמנייה</h1>
+        <p>...חסרים לנו רק כמה פרטים קטנים</p>
+        <form>
+            <input type="name" class="contact-form-text" placeholder="Full name">
+            <input type="email" class="contact-form-text" placeholder="Email">
+            <input type="tel" class="contact-form-text" placeholder="Phone">
+            <br>
+            <button type="submit" class="open-modal-btn-res" onclick="onToggleModal(event)"><strong>הזמן מקום</strong></button>
+        </form>
+    </div>
+    <div class = "screen-overly"></div>
+    <div class = "modal">
+        <h1>!איזה כיף</h1>
+        <h1>שמרנו לך מקום בחמנייה</h1>
+        <h1>מאחלים לך יום עבודה מוצלח</h1>
+        <button class = "close-btn" onclick="location.href='./homePage.html'">סגור</button>
+    </div>
+</body>
+</html>

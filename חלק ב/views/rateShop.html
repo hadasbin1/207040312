@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Coffee Work</title>
+</head>
+<body>
+    <nav class="navbar"> 
+        <img src="../static/Logo1.png" class="miniLogo">
+        <ul>
+            <il><a href="./homePage.html">Home Page</a></il>
+            <il><a href="./contactUs.html">Contact Us</a></il>
+            <il><a href="./aboutUs.html">About Us</a></il>
+        </ul>
+    </nav>
+    <div class="form-box">
+        <h1>Rate the Coffee shop</h1>
+        <p dir="rtl"> זה יהיה ממש קצר, <br>
+            ויעזור להרבה אנשים אחריך!</p>
+        <label dir="rtl" for="coffeeShop" class="lable">בחר בית קפה:</label><br>
+        <select name="coffeeShop" class="coffeeShop">
+            <option value="shop1">חמנייה</option>
+            <option value="shop2">ארקפה</option>
+            <option value="shop3">Mela</option>
+            <option value="shop1">ליאתי</option>
+            <option value="shop2">קפה אלקלעי</option>
+            <option value="shop3">קפה נועם</option>
+        </select>
+        <br><br>
+        <label dir="rtl" for="coffeeShop" class="lable">דרג את שהותך הכללית בבית הקפה:</label><br>
+        <div class="rating">
+            <input type="radio" name="star" id="star1"><label for="star1"></label>
+            <input type="radio" name="star" id="star2"><label for="star2"></label>
+            <input type="radio" name="star" id="star3"><label for="star3"></label>
+            <input type="radio" name="star" id="star4"><label for="star4"></label>
+            <input type="radio" name="star" id="star5"><label for="star5"></label>
+        </div>
+        <br><br><br>
+        <input class="send-btn" type="submit">
+    </div>
+</body>
+</html>
