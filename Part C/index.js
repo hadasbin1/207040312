@@ -50,22 +50,23 @@ app.get('/aboutUs', (req,res)=>{
 })
 
 app.get('/shops', (req,res)=>{
-    const Q1 = "SELECT * FROM shops";
+    const Q1 = "SELECT S.coffee_shop, S.sockets, S.quiet_place, S.wifi, S.cosher, S.vegan, S.free_places, R.avg_rating FROM shops as S JOIN (SELECT coffee_shop, AVG(rate) AS avg_rating FROM rating GROUP BY coffee_shop) AS R ON S.coffee_shop = R.coffee_shop";
     SQL.query(Q1, (err, shopDetails) =>{
         if (err) {
             console.log("error: ", err);
             res.status(400).send({message: "error in getting all shops: " + err});
             return;
         }
-        const Q2 = "SELECT coffee_shop, avg(rate) FROM rating GROUP BY coffee_shop"
-        SQL.query(Q2, (err, shopAVGRate) =>{
-            if (err) {
-                console.log("error: ", err);
-                res.status(400).send({message: "error in getting all shops: " + err});
-                return;
-            }            
-            res.render('shops', {details: shopDetails, rating: shopAVGRate });  
-        })
+        // const Q2 = "SELECT coffee_shop, avg(rate) AS avg_rating FROM rating GROUP BY coffee_shop"
+        // SQL.query(Q2, (err, shopAVGRate) =>{
+        //     if (err) {
+        //         console.log("error: ", err);
+        //         res.status(400).send({message: "error in getting all shops: " + err});
+        //         return;
+        //     }            
+        //     res.render('shops', {details: shopDetails, rating: shopAVGRate });  
+        // })
+        res.render('shops', {details: shopDetails});  
     })
 })
 

@@ -3,7 +3,7 @@ const veganCheckbox = document.querySelector('#veganCheckbox');
 cosherCheckbox.addEventListener('click', filterCoffeeShops);
 veganCheckbox.addEventListener('click', filterCoffeeShops);
 
-function onToggleModal(name, sockets, quiet_place, wifi, cosher, vegan, free_places){
+function onToggleModal(name, sockets, quiet_place, wifi, cosher, vegan, free_places, rating){
     const elModal = document.querySelector('.modal')
     const elScreen = document.querySelector('.screen-overly-shop')
     elModal.classList.toggle('open')
@@ -11,6 +11,9 @@ function onToggleModal(name, sockets, quiet_place, wifi, cosher, vegan, free_pla
 
     const elCoffeeShop = elModal.querySelector('h1');
     elCoffeeShop.innerText = name;
+
+    const elRate = elModal.querySelector('.rate');
+    elRate.innerText = rating + "/5";
     
     // change bit(1/0) to icon(V/X)
     const elSockets = elModal.querySelector('.sockets');

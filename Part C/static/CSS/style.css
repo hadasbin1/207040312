@@ -605,3 +605,10 @@ td{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 } 
+
+.rate{
+    text-align: center;
+    margin: 1vw;
+    font-size: 16px;
+    margin: 0 auto;
+}

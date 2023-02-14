@@ -14,18 +14,18 @@ block content
           ul.shop
             li.shopName= shop.coffee_shop
             li.meter 210m
-            button.moreDetails(onclick='onToggleModal("' + shop.coffee_shop + '", "' + shop.sockets + '", "' + shop.quiet_place + '", "' + shop.wifi + '", "' + shop.cosher + '", "' + shop.vegan + '","' + shop.free_places + '")') More Details
+            button.moreDetails(onclick='onToggleModal("' + shop.coffee_shop + '", "' + shop.sockets + '", "' + shop.quiet_place + '", "' + shop.wifi + '", "' + shop.cosher + '", "' + shop.vegan + '","' + shop.free_places + '", "' + shop.avg_rating +'")') More Details
     .screen-overly-shop
     .modal
         button(class="close-modal-btn", onclick="onToggleModal()") X
-        h1
-        h2(class="smallText")
+        h1  
+        h2(class="rate")
         table
             tr
                 td(class="sockets")
                 td שקעים במקום
             tr 
-                td(class="quiet_place")
+                td(class="quiet_place") 
                 td מקום שקט
             tr
                 td(class="wifi")
