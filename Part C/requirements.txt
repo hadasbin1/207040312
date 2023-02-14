@@ -9,6 +9,10 @@ nodemon
 
 the code: npm i express mysql2 body-parser  csvtojson path pug nodemon --save
 
+in cmd:
+cd // put here from folder Part C
+nodemon index
+
 Tables:
 To create and fill all the tables, go to localhost:3000/initData
 On this page you will click on a different button each time according to the order on the page (from top to bottom). 
