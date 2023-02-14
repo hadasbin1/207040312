@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/CSS/style1.css")
+        title init
+        
+    body
+        div.head
+            h1 Init Database for CoffeWork project
+        div.CreateButton
+            button(class="initBtn" onclick="location.href='./CreateTables'") Create tables
+        div.InsertButton
+            button(class="initBtn" onclick="location.href='./InsertData'") Insert to tables
+        div.ShowButtons
+            button(class="initBtn" onclick="location.href='./ShowUserTable'") Show reservation table
+            button(class="initBtn" onclick="location.href='./ShowShopsTable'") Show shops table
+            button(class="initBtn" onclick="location.href='./ShowRatingTable'") Show rating table
+            button(class="initBtn" onclick="location.href='./ShowContactTable'") Show contact table
+        div.DropButtons
+            button(class="initBtn" onclick="location.href='./DropUserTable'") Drop reservation table
+            button(class="initBtn" onclick="location.href='./DropShopTable'") Drop shops table
+            button(class="initBtn" onclick="location.href='./DropRatingTable'") Drop rating table
+            button(class="initBtn" onclick="location.href='./DropContactTable'") Drop contact table
+            button(class="initBtn" onclick="location.href='./DropAllTables'") Drop all tables
+        div.homeButton
+            button(class="initBtn" onclick="location.href='./homePage'") Go to Home Page
+
+
+        

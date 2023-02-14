@@ -1,0 +1,23 @@
+extend layout 
+block content
+    .screen-overly
+    .confirm 
+        h1
+            |   !איזה כיף
+            br
+            |   שמרנו מקום במיוחד בשבילך
+        h1 Coffee Work מאחלת לך יום עבודה מוצלח
+        button(class="closeBtn" onclick="location.href='./homePage'") סגור
+    form(action="" method='POST')
+        h2 איזה כיף ששריינת מקום
+        p(class="mediumText")
+            | ...חסרים לנו רק כמה פרטים קטנים
+        label(for="full_name")
+        input(type="text", name="full_name" class="form-text" placeholder="Full name" disabled )
+        label(for="email") 
+        input(type="email", name="email" class="form-text" placeholder="Email" disabled )
+        label(for="phone") 
+        input(type="tel", name="phone" class="form-text" placeholder="Phone" disabled )
+        input(type="submit" class="submitRes" value="הזמן מקום" disabled )
+    
+

@@ -1,0 +1,607 @@
+body.homePage{
+    background-image: url("../media/HP-Background.jpg");
+    background-size: cover;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+body{
+    background: #c8aa7e;
+    background-size: cover;
+    padding: 1vw;
+    margin: 1vw;
+    font-family: Calibri light;
+}
+
+.mediumText{
+    font-family: calibri;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+
+.smallText{
+    text-align: center;
+    margin: 1vw;
+    font-size: 16px;
+}
+
+/* init data */
+.head h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.CreateButton{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.InsertButton{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.ShowButtons{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.DropButtons{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.homeButton{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.initBtn{
+    width: 16vw;
+    height: 4vw;
+    background-color: white;
+    font-size: 16px;
+    text-align:center;
+    align-items: center;
+    font-family: calibri;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.initBtn:hover{
+    color: gray;
+}
+
+/*form style*/
+form{
+    width: 30vw;
+    height: 30vw;
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow: 0 0 15px 0 black;
+    top: 27vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 20px;
+}
+
+h2{
+    font-size: 3vw;
+    font-family: Calibri light;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    color: black;
+}
+
+.form-text{
+    font-family: Calibri;
+    width: 23vw;
+    height: 3vw;
+    margin-top: 1vw;
+    margin-left: 3vw;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    outline: none;
+    align-items: center;
+}
+
+.form-textarea{
+    font-family: Calibri;
+    padding: 1vw;
+    margin-left: 3vw;
+    margin-top: 1vw;
+    border: 1px solid #777;
+    border-radius: 10px;
+    outline: none;
+    align-items: center;
+
+}
+
+/* Layout  */
+.miniLogo{
+    width: 6vw;
+}
+
+nav{
+    background-color: white;
+    height: 5vw;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul il{
+    padding: 30px 30px;
+}
+
+nav ul il a{
+    color: black;
+    font-family: Candara;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+nav ul il a:hover{
+    color: gray;
+}
+
+/* Home Page */
+.helpLogo{
+    width: 6vw;
+}
+
+.welcome h1{
+    font-size: 48px;
+    font-family: Cooper Black;
+    color: black;
+    margin-top:-0.1vw;
+    margin-left: 7vw;
+}
+
+.welcome h2{
+    font-size: 20px;
+    font-family: Candara Light;
+    color:black;
+    margin-top:-3vw;
+    margin-right: 47vw;
+}
+
+/* Animation for login button */
+.Entrance{
+    font-family: Calibri;
+    background-color: #f8d6a5; 
+    color: black;
+    padding: 20px 36px;
+    box-shadow: 0 2px 10px black;
+    font-size: 20px;
+    cursor: pointer;
+    animation: moveButton 2s  0s infinite ease-in-out;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+}
+
+@keyframes moveButton{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+} 
+
+.Logo{
+    margin-left: 65vw;
+    margin-top:-20vw;
+    rotate: 10deg;
+}
+
+.home-Logo{
+    width: 23vw;
+}
+
+#checkbox{
+    display: none;
+}
+
+.MyHeading{
+    font-size: 25px;
+    font-family: Calibri;
+    color:rgb(211, 3, 3);
+    top: 10vw;
+    margin-left: 23vw;
+    margin-top: 12vw;
+
+}
+
+/* About Us  */
+h6{
+    margin: 2vw;
+    font-size: 40px;
+    font-family: Cooper Black;
+    color: black;
+    margin-left: 3vw;
+}
+
+p{
+    font-size: 18px;
+    color: black;
+    margin-left: 3vw;
+}
+
+/* Contact Us*/
+.submitContact{
+    font-family: calibri;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 12vw;
+    margin-top: 0.5vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    background-color: black;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.submitContact:hover{
+    color: gray;
+}
+
+/* Rate Us */
+.coffeeShop{
+    font-family: Calibri;
+    font-size: 16px;
+    margin-left:30% ;
+    text-align: center;
+}
+
+.ratingStar{
+    position:absolute;
+    left: 15vw;
+    top: 20.5vw;
+    transform:translate(-50%,-50%) rotateY(180deg);
+    display: flex;
+}
+
+.ratingStar input{
+    display:none;
+}
+
+.ratingStar label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    font-family: calibri;
+}
+
+.ratingStar label:before{
+    font-family: Arial, Helvetica, sans-serif;
+    content: '\2605';
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: white;
+}
+
+.ratingStar label:after{
+    font-family: Arial, Helvetica, sans-serif;
+    content: '\2605';
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: #997c4f;
+    top:0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+
+.ratingStar label:hover:after,
+.ratingStar label:hover ~ label:after,
+.ratingStar input:checked ~ label:after{
+    opacity: 1;
+}
+
+.submitRate{
+    font-family: calibri;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 12vw;
+    margin-top: 5vw;
+    padding: 0.5vw 1.8vw 0.5vw 2vw;
+    background-color: black;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;   
+}
+
+.submitRate:hover{
+    color: gray;
+}
+
+/* Reservation */
+.submitRes{
+    font-family: calibri;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 11vw;
+    margin-top: 1.5vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    background-color: black;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.submitRes:hover{
+    color: gray;
+}
+
+.screen-overly{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.366);
+    display: block;
+}
+
+.confirm{
+    width: 200px;
+    height: 320px;
+    text-align: center;
+    background-color: #c8aa7e;
+    box-shadow: 0 0 15px 0 black;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    bottom: 8%;
+}
+
+.confirm h1{
+    padding: 0vw;
+    font-size: 2.5vw;
+    font-family: Calibri light;
+    text-align: center;
+    color: black;
+}
+
+.closeBtn{
+    font-family: calibri;
+    border-radius: 20px;
+    color: #fff;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    background-color: black;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.closeBtn:hover{
+    color: gray;
+}
+
+/* shops */
+.shopList{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    list-style: none;
+    text-align: center;
+}
+
+.shopCon{
+    width: 200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.500);
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop li{
+    list-style: none;
+}
+
+.shopCon >* { 
+    padding: 0;
+}
+
+
+.shop li.shopName{
+    font-size: 25px;
+}
+
+.shop li.meter{
+    font-size: 15px;
+}
+
+.moreDetails{
+    background-color: black;
+    color: white;
+    font-family: Calibri;
+    border-radius: 10px;
+    padding: 0.3vw;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.moreDetails:hover{
+    color: gray;
+}
+
+
+.screen-overly-shop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.366);
+    display: none;
+}
+
+.screen-overly-shop.open{
+    display: block;
+}
+
+.modal{
+    width: 200px;
+    height: 280px;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #c8aa7e; 
+    box-shadow: 0 0 15px 0 black;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.modal h1{
+    font-size: 30px;
+    font-family: calibri;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin: 0 auto;
+
+} 
+
+.modal.open{
+    top: 50%;
+}
+
+.close-modal-btn{
+    float: right;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.close-modal-btn:hover{
+    color: gray;
+}
+
+table{
+    margin: 0 auto;
+    width: 50%;
+}
+
+td{
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 2px 10px 2px 10px;
+}
+
+.shopButton{
+    font-family: calibri;
+    border-radius: 20px;
+    color: #fff;
+    background-color: black;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.shopButton:hover{
+    color: gray;
+}
+
+.places{
+    font-size: 15px;
+}
+
+.filter{
+    margin-left: 60%;
+}
+
+.CBcontainer {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: right;
+    padding: 0 auto;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.CBcontainer:first-child { 
+    margin-bottom: 16px;
+}
+
+.CBcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+    float: right;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.CBcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.CBcontainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 

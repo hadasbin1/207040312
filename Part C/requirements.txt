@@ -1,0 +1,16 @@
+installed models:
+express 
+mysql2 
+body-parser  
+csvtojson 
+path 
+pug 
+
+the code: npm i express mysql2 body-parser  csvtojson path pug --save
+
+Tables:
+To create and fill all the tables, go to localhost:3000/initData
+On this page you will click on a different button each time according to the order on the page (from top to bottom). 
+The "create tables" button will create all the existing tables, the "insert to tables" button will fill all the tables with data. After that you can view all the tables created by using the show buttons and finally you can drop each table separately or all of them together using the drop "all tables button".
+Please note, as soon as you have clicked on drop of a certain table, you must drop all the other tables using the designated buttons and not click on drop all tables.
+Finally, after all the tables are filled, you can click on the "go to home page" button and enjoy using the site.

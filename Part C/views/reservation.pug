@@ -1,0 +1,15 @@
+extend layout 
+block content
+    div(onload="onInit()", onclick="onInit()")
+        form(action="/createNewRes", method='POST', id="reservationForm", onsubmit="return validateResForm()")
+            h2 איזה כיף ששריינת מקום
+            p(class="mediumText")
+                | ...חסרים לנו רק כמה פרטים קטנים
+            label(for="full_name")
+            input(type="text", name="full_name" class="form-text" placeholder="Full name" required)
+            label(for="email") 
+            input(type="email", name="email" class="form-text" placeholder="Email" requierd)
+            label(for="phone") 
+            input(type="tel", name="phone" class="form-text" placeholder="Phone" requierd)
+            input(type="submit" class="submitRes" value="הזמן מקום")
+

@@ -1,0 +1,41 @@
+extends layout 
+block content   
+    h1(class="filter") תוכל לסנן לפי הקריטריונים הבאים  
+    label.CBcontainer(for='cosherCheckbox') 
+        span כשר
+        input#cosherCheckbox(type='checkbox')
+        .checkmark
+    label.CBcontainer(for='veganCheckbox') טבעוני
+        input#veganCheckbox(type='checkbox')
+        .checkmark
+    ul.shopList
+      each shop in details 
+        li.shopCon(class=`${shop.coffee_shop} ${shop.cosher ? 'cosher' : ''} ${shop.vegan ? 'vegan' : ''}`)
+          ul.shop
+            li.shopName= shop.coffee_shop
+            li.meter 210m
+            button.moreDetails(onclick='onToggleModal("' + shop.coffee_shop + '", "' + shop.sockets + '", "' + shop.quiet_place + '", "' + shop.wifi + '", "' + shop.cosher + '", "' + shop.vegan + '","' + shop.free_places + '")') More Details
+    .screen-overly-shop
+    .modal
+        button(class="close-modal-btn", onclick="onToggleModal()") X
+        h1
+        h2(class="smallText")
+        table
+            tr
+                td(class="sockets")
+                td שקעים במקום
+            tr 
+                td(class="quiet_place")
+                td מקום שקט
+            tr
+                td(class="wifi")
+                td ויפי חזק
+            tr
+                td(class="cosher")
+                td כשר
+            tr
+                td(class="vegan")
+                td טבעוני
+        p(class="places")
+        button(class="shopButton", onclick="location.href='./reservation'") הזמן מקום
+

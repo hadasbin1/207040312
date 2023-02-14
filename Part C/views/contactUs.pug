@@ -1,0 +1,11 @@
+extends layout
+block content 
+    form(action="/createNewCall", method="post", id="contactForm", onsubmit="return validateContactForm()")
+        h2 Contact Us 
+        label(for="contactName")
+        input(type="text", name="contactName" class="form-text" placeholder="Full name" required)
+        label(for="contactEmail") 
+        input(type="email", name="contactEmail" class="form-text" placeholder="Email" requierd)
+        label(for="contactText") 
+        textarea(type="text" rows="5" cols="39" name="contactText" class="form-textarea" placeholder="Your massage" required)
+        input(type="submit" class="submitContact" value="send")

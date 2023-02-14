@@ -1,0 +1,32 @@
+extends layout
+block content 
+    form(action="/createNewRate", method="post")
+        h2  Rate the Coffee Shop
+        p(class="mediumText") 
+            | ,זה יהיה ממש קצר
+            br
+            | !ויעזור להרבה אנשים אחריך
+        p(class="smallText")
+            | :בחר בית קפה
+        select(id="chosenCoffee", name="coffeeShop", class="coffeeShop")
+            each val in coffeeShops
+                option(value= val.coffee_shop) #{val.coffee_shop}
+        p(class="smallText")
+            |   :דרג את שהותך הכללית בבית הקפה
+        div(class="ratingStar")
+            label(for="star5")
+            input(type="radio" name="rating" id="star5" value="5")
+            label(for="star4")
+            input(type="radio" name="rating" id="star4" value="4")
+            label(for="star3")
+            input(type="radio" name="rating" id="star3" value="3")
+            label(for="star2")
+            input(type="radio" name="rating" id="star2" value="2")
+            label(for="star1")
+            input(type="radio" name="rating" id="star1" value="1")
+        input(type="submit" class="submitRate" value="שליחה")    
+
+
+
+
+    
